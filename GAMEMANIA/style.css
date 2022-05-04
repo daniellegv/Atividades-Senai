@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    height: 80px;
+}
+
+.container-grid {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.cabeçalho {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu {
+    width: 884px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Raleway;
+}
+
+.banner {
+   height: 897px;
+
+   background-image: url(img/banner.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.posicionamento-banner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-banner {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo-banner h1 {
+    color: #57469C;
+    font-family: "Raleway";
+    font-size: 99px;
+    font-weight: bolder;
+}
+
+.conteudo-banner p {
+    color: black;
+    font-family: "Raleway";
+    font-size: 44px;
+}
+
+.conteudo-banner a {
+    padding: 15px;
+    background-color: #57469C;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Raleway";
+    font-size: 25px;
+    border-radius: 5px;
+}   
+
+.banner2 {
+    height: 600px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+    
+
+.conteudo-banner2 h1 {
+    color: #57469C;
+    font-family: "Raleway";
+    font-size: 45px;
+}
+
+.banner3 {
+  height: 700px;
+  padding: 20px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner3 h1 {
+  color: #57469C;
+    font-family: "Raleway";
+    font-size: 45px;
+}
+
+.banner3 h3 {
+  padding: 40px;
+  color:black;
+  font-family: Raleway;
+  font-size: 30px;
+}
+
+.conteudo-banner3 a {
+    padding: 15px;
+    background-color: #57469C;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Raleway";
+    font-size: 25px;
+    border-radius: 5px;
+  }
+
+  body {
+    font-family: sans-serif;
+    background: #f2f2f2;
+  }
+
+  img {
+    width: 591;
+    height: 473;
+  }
+  
+  .container-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
+  
+  /* hover styles */
+  .location-listing {
+    position: relative;
+  }
+  
+  .location-image {
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+  }
+  
+  .location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(253, 253, 253, 0.4);
+    color: rgb(255, 255, 255);
+    
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .location-listing:hover .location-title {
+    opacity: 1;
+  }
+  
+  .location-listing:hover .location-image img {
+    filter: blur(2px);
+  }
+  
+  @media (hover: none) { 
+    .location-title {
+      opacity: 1;
+    }
+    .location-image img {
+      filter: blur(2px);
+    }
+  }
+
+.banner4 {
+  height: 600px;
+
+   background-color: white;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+  
+.banner4 img {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.banner5 {
+  height: 100px;
+
+   background-color: rgb(0, 0, 0);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.banner4 h4 {
+  color: black;
+  font-family: Raleway;
+  font-size: 30px;
+  text-align: center;
+}
+  
+.banner5 h5 {
+  color: white;
+  font-family: Raleway;
+  font-size: 30px;
+}
+
+.banner5 img {
+  height: 60px;
+  width: 60px;
+  display: inline;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.banner5 img, h5 {
+  display: inline-block;
+  text-align: center;
+}
+
+.conteudo-banner5 {
+  padding-top: 20px;
+  width: 1211px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
